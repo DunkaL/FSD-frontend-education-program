@@ -1,0 +1,15 @@
+extends ../layout/default
+
+block variables
+    - var title = 'FSD | home';
+
+block content
+    .container
+        form(action="/", method="post").card
+            .card__title Войти 
+            input(type="email", name="email", placeholder="Email")
+            input(type="password", name="password", placeholder="Пароль")
+            button(type="button") войти
+        
+
+    //- include ../includes/FormAuthorization

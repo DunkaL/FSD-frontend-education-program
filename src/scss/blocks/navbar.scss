@@ -1,0 +1,61 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__collapse{
+        display: flex;
+    }
+    &__nav{
+        display: flex;
+        margin-right: 1.5rem;
+        &-link{
+            display: inline-block;
+            padding: 1.3rem 1.2rem;
+            text-decoration: none !important;
+            color: rgba(31, 32, 65, 0.5);
+            cursor: pointer;
+            transition: all .2s linear;
+            &--subnav{
+                display: flex;
+                align-items: center;
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 11px;
+                    height: 11px;
+                    margin-top: -4px;
+                    margin-left: 10px;
+                    border-bottom: 3px solid rgba(31, 32, 65, 0.5);
+                    border-right: 3px solid rgba(31, 32, 65, 0.5);
+                    transform: rotate(45deg);
+                }
+                &:hover:after{
+                    border-bottom: 3px solid rgba(31, 32, 65, 0.75);
+                    border-right: 3px solid rgba(31, 32, 65, 0.75);
+                }
+            }
+            &:hover{
+                -webkit-text-stroke: 1px rgba(31, 32, 65, 0.75);
+                color: rgba(31, 32, 65, 0.75);
+                transition: all .2s linear;
+            }
+        }
+    }
+    &__auth{
+        display: flex;
+        align-items: center;
+        button:not(:last-child){
+           margin-right: 2.2rem; 
+        }
+        &--user{
+            color: rgba(31, 32, 65, 0.5);
+            &::before{
+                content: "";
+                width: .2rem;
+                height: 3rem;
+                margin-right: 2rem;
+                background-color: rgba(31, 32, 65, 0.1);
+            }
+        }
+    }
+}

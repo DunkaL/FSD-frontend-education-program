@@ -1,0 +1,123 @@
+@mixin desktop ($width){
+  @media only screen and (max-width: $width){
+    @content;
+  }  
+}
+
+@mixin desktop-24{
+  @media only screen and (max-width: 1920px){
+    @content;
+  }      
+}
+
+@mixin desktop-22{
+  @media only screen and (max-width: 1680px){
+    @content;
+  }
+}
+
+@mixin desktop-20{
+  @media only screen and (max-width: 1600px){
+    @content;
+  }
+}
+
+@mixin desktop-19{
+  @media only screen and (max-width: 1440px){
+    @content;
+  }
+}
+
+@mixin desktop-15{
+  @media only screen and (max-width: 1366px){
+    @content;
+  }
+}
+
+@mixin desktop-13{
+  @media only screen and (max-width: 1280px){
+    @content;
+  }
+}
+
+@mixin desktop-12{
+  @media only screen and (max-width: 1024px){
+    @content;
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+
+@mixin tablet ($width){
+  @media only screen and (max-width: $width){
+    @content;
+  }
+}
+
+@mixin tablet-samsung-galaxy-tab-10{
+  @media only screen and (max-width: 800px){
+    @content;
+  }
+}
+
+@mixin tablet-ipad-mini{
+  @media only screen and (max-width: 768px){
+    @content;
+  }
+}
+
+@mixin tablet-nexus-7{
+  @media only screen and (max-width: 600px){
+    @content;
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+
+@mixin mobile ($width){
+  @media only screen and (max-width: $width){
+    @content;
+  }
+}
+
+@mixin mobile-xiaomi-redmi{
+  @media only screen and (max-width: 360px){
+    @content;
+  }
+}
+
+@mixin mobile-xiaomi-redmi-note-5{
+  @media only screen and (max-width: 393px){
+    @content;
+  }
+}
+
+@mixin mobile-nexus{
+  @media only screen and (max-width: 412px){
+    @content;
+  }
+}
+
+@mixin mobile-lg{
+  @media only screen and (max-width: 480px){
+    @content;
+  }
+}
+
+@mixin mobile-iphone-xr{
+  @media only screen and (max-width: 414px){
+    @content;
+  }
+}
+
+@mixin mobile-iphone-xs{
+  @media only screen and (max-width: 375px){
+    @content;
+  }
+}
+
+@mixin mobile-iphone-5{
+  @media only screen and (max-width: 320px){
+    @content;
+  }
+}

@@ -1,0 +1,38 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset='UTF-8')
+        meta(name='robots' content='index,follow')
+        meta(name='description' content='Сборка для верстки сайта')
+        meta(name='keywords' content='HTML, CSS, JavaScript')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        // Данные Open Graph
+        meta(property='og:title' content='Заголовок здесь')
+        meta(property='og:description' content='Описание здесь')
+        meta(property='og:image' content='https://.../image250X250.png')
+        meta(property='og:type' content='website')
+        meta(property='og:url' content='http://')
+        // Google
+        meta(property='business:contact_data:email' content='email')
+        meta(property='business:contact_data:phone_number' content='phone')
+        meta(property='business:contact_data:website' content='http://')
+        // Google Plus
+        meta(itemprop='name' content='Название сайта')
+        meta(itemprop='description' content='Описание сайта')
+        meta(itemprop='image' content='https://.../image250X250.png')
+        // Twitter
+        meta(name='twitter:card' content='summary')
+        meta(name='twitter:title' content='Название страницы')
+        meta(name='twitter:description' content='Описание')
+        meta(name='twitter:image:src' content='https://.../image250X250.png')
+        meta(name='twitter:domain' content='website.com')
+        link(rel='shortcut icon' type='image/x-icon' href='img/favicon.ico')
+        title #{title}
+    body
+        include ../includes/header
+        maim.main
+            block content
+        include ../includes/footer

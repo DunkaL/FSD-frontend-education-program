@@ -1,0 +1,53 @@
+::placeholder{
+    color: #BABABA;
+}
+    
+::selection{
+    background-color: $accent;
+    color: #fff;
+}
+	
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+        
+input, textarea, button{
+    outline: none !important;
+    &:focus:required:invalid{
+        border-color: red;
+    }
+    &:required:valid{
+        border-color: green;
+    }
+}
+	
+a{
+    color: inherit;
+    text-decoration: none;
+    outline-color: #666;
+    &:hover{
+        text-decoration: underline
+    }
+}	
+
+html{font-size: 62.5%}
+
+body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.6rem;
+    font-weight: 400;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: $text;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hamburger{
+    @include burger;
+}

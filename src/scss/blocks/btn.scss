@@ -1,0 +1,29 @@
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    background-color: #E5E5E5;
+    &--prim{
+        background: linear-gradient(180deg, $purple 0%, $light-blue 100%);
+    }
+    &--rounded{
+        padding: .2rem;
+        color: #BC9CFF;
+        background: linear-gradient(180deg, $purple 0%, $light-blue 100%);
+        span{
+            display: inline-block;
+            padding: .8rem 1.8rem;
+            border-radius: 22px;
+            background-color: $white;
+        }
+    }
+}

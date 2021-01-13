@@ -1,0 +1,14 @@
+mixin textField(type, placeholder, name, booleanLabel, textlabel)
+    if(booleanLabel)
+        label(class="input__label" for= name)= textlabel
+    input(class="input__field" type= type name= name id= name placeholder= placeholder)
+
+
+mixin navbarLink(title, subnav)
+    if(subnav)
+        li.navbar__nav-item
+            span(class="navbar__nav-link navbar__nav-link--subnav")= title 
+            ul.navbar__nav-subnav
+    else
+        li.navbar__nav-item
+            a(class="navbar__nav-link" href="#")= title     

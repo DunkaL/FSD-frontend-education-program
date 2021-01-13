@@ -1,0 +1,26 @@
+@mixin burger{
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .1s;
+    user-select: none;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+    .line{
+        fill: none;
+        transition: stroke-dasharray .4s,stroke-dashoffset .4s;
+        stroke: #000;
+        stroke-width: 5;
+        stroke-linecap: square;
+    }
+    .bottom, & .top{
+        stroke-dasharray: 40 121;
+    }
+    &.menu-active{
+        transform: rotate(45deg);
+        & .bottom, & .top{
+            stroke-dashoffset: -68px;
+        }
+    }
+}

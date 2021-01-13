@@ -1,0 +1,14 @@
+@import "./vendor/reset";
+@import "mixins";
+@import 'vars';
+@import "font";
+@import "simple-grid";
+@import 'settings';
+
+body{font-family: Montserrat, sans-serif;}
+
+// block
+@import "blocks/header";
+@import "blocks/navbar";
+@import "blocks/btn";
+@import "blocks/footer";

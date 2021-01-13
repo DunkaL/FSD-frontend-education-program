@@ -1,0 +1,33 @@
+header.header 
+    .container
+        nav.navbar
+            a(href="/")
+                img(class="logo", src="img/Logo.svg", alt="logo")
+            div.navbar__collapse
+                ul.navbar__nav
+                    +navbarLink('О нас', false)
+                    +navbarLink('Услуги', true)
+                    +navbarLink('Вакансии', false)
+                    +navbarLink('Новости', false)
+                    +navbarLink('Соглашения', true)
+                //- .navbar__auth.navbar__auth--user
+                //-     a(href="#") Юлий Цезарь
+                .navbar__auth
+                    button.btn.btn--rounded
+                        span Войти
+                    button.btn.btn--prim Зарегистрироваться
+            
+
+
+
+
+
+
+
+
+
+
+//- svg#hamburger.hamburger(viewBox='20 20 60 60' width='40')
+//-     path.line.top(d='m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20')
+//-     path.line.middle(d='m 70,50 h -40')
+//-     path.line.bottom(d='m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20')
